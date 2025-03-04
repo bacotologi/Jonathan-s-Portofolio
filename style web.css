@@ -123,7 +123,11 @@ nav .logo{
     color: #b74b4b;
 }
 
+.hamburg{
+    opacity: 1;
+}
 .dropdown{
+    display: none;
     z-index: 100;
     position: absolute;
     top: 0;
@@ -133,7 +137,9 @@ nav .logo{
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
-
+}
+.dropdown .active{
+    display: block;
 }
 
 .dropdown .links a{
@@ -498,7 +504,7 @@ footer .text span a:hover{
 }
 
 @media (max-width: 1000px){
-.about .about{
+    .about .about{
     justify-content: center;
     flex-direction: column;
     }
@@ -584,7 +590,6 @@ footer .text span a:hover{
     body {
         background-color: black;
     }
-
    .container .image{
         width: 50%;
         height: 60%;
@@ -596,7 +601,7 @@ footer .text span a:hover{
     .container button{
         margin-top: 15px;
     }
-
+    
     .logo {
         display: block;
     }
